@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sliders",
+  "info": {
+    "name": "slider"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slider": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "slidertitle": {
+      "type": "string"
+    },
+    "titlecontent": {
+      "type": "richtext"
+    }
+  }
+}
